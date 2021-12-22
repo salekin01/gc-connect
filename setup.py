@@ -1,10 +1,10 @@
 from setuptools import setup
 
 setup(
-    name = "gc_connect.py",
+    name = "gcconnect.py",
     version = "0.1",
-    py_modules = ['gc_connect'],
-    url = "https://github.com/salekin01/gc-connect",
+    py_modules = ['gcconnect'],
+    url = "https://github.com/salekin01/gcconnect",
     author = "salekin",
     install_requires = ["pyngrok"]
 )
