@@ -350,12 +350,21 @@ def _setup_nvidia_gl():
   subprocess.Popen(["Xorg", "-seat", "seat-1", "-allowMouseOpenFail", "-novtswitch", "-nolisten", "tcp"])
 
 def _setupVNC():
-  libjpeg_ver = "2.1.2"
-  virtualGL_ver = "3.0"
+
+  libjpeg_ver = "2.0.5"
+  virtualGL_ver = "2.6.4"
+  turboVNC_ver = "2.2.5"
+  
+  #libjpeg_ver = "2.1.2"
+  #virtualGL_ver = "3.0"
   turboVNC_ver = "2.2.6"
   
-  libjpeg_url = "https://github.com/salekin01/gcconnect/releases/download/v2.2.6/libjpeg-turbo-official_{0}_amd64.deb".format(libjpeg_ver)
-  virtualGL_url = "https://github.com/salekin01/gcconnect/releases/download/v2.2.6/virtualgl_{0}_amd64.deb".format(virtualGL_ver)
+  libjpeg_url = "https://github.com/demotomohiro/turbovnc/releases/download/2.2.5/libjpeg-turbo-official_{0}_amd64.deb".format(libjpeg_ver)
+  virtualGL_url = "https://github.com/demotomohiro/turbovnc/releases/download/2.2.5/virtualgl_{0}_amd64.deb".format(virtualGL_ver)
+  #turboVNC_url = "https://github.com/demotomohiro/turbovnc/releases/download/2.2.5/turbovnc_{0}_amd64.deb".format(turboVNC_ver)
+  
+  #libjpeg_url = "https://github.com/salekin01/gcconnect/releases/download/v2.2.6/libjpeg-turbo-official_{0}_amd64.deb".format(libjpeg_ver)
+  #virtualGL_url = "https://github.com/salekin01/gcconnect/releases/download/v2.2.6/virtualgl_{0}_amd64.deb".format(virtualGL_ver)
   turboVNC_url = "https://github.com/salekin01/gcconnect/releases/download/v2.2.6/turbovnc_{0}_amd64.deb".format(turboVNC_ver)
 
   _download(libjpeg_url, "libjpeg-turbo.deb")
